@@ -171,3 +171,29 @@ It ensures:
 
 Playbook Version: v0.1  
 Status: Complete
+
+
+---
+
+# Day 1 – Setup & Calibration (06 Jan 2026)
+
+- Created stress-test branch for execution.
+- As per reviewer guidance, a toy CVAT project was overridden to create the project "Parcel-Boxes-30".
+- Labels configured: package, label, barcode (bounding boxes only).
+- One task created and all 30 images uploaded.
+- Calibration completed on exactly 10 images.
+
+# Calibration Metrics
+- Start time: 06:09 PM IST
+- End time: 06:33 PM IST
+- Images annotated: 10
+- Avg objects per image: 3–5
+
+# Observations / Edge Cases
+- Partial parcels at image boundaries.
+- Labels and barcodes partially occluded by gray rectangles.
+- Multiple packages and multiple labels in single images.
+
+# Assumptions
+- Only visible regions annotated; no hidden parts inferred.
+- Gray occluder rectangles ignored as per client brief.
