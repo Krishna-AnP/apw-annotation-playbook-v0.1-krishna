@@ -197,3 +197,13 @@ Status: Complete
 # Assumptions
 - Only visible regions annotated; no hidden parts inferred.
 - Gray occluder rectangles ignored as per client brief.
+
+# Deliverables (06 Jan 2026)
+
+- Total Images: 30
+- Labels: package, label, barcode
+- Formats Delivered:
+  - COCO JSON
+  - CSV
+- Tool Used: CVAT
+
