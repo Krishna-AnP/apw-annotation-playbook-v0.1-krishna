@@ -175,43 +175,73 @@ Status: Complete
 
 ---
 
+# CVAT Annotation Execution – Parcel Dataset (Toy)
+
+# Project
+Parcel-Boxes-30
+
+# Branch
+`stress-test-06jan`
+
+# Tool
+CVAT Cloud
+
 # Day 1 – Setup & Calibration (06 Jan 2026)
 
-- Created stress-test branch for execution.
-- As per reviewer guidance, a toy CVAT project was overridden to create the project "Parcel-Boxes-30".
-- Labels configured: package, label, barcode (bounding boxes only).
-- One task created and all 30 images uploaded.
-- Calibration completed on exactly 10 images.
+- Created `stress-test-06jan` branch for execution.
+- As per reviewer guidance, an existing toy CVAT project was overridden to create the project Parcel-Boxes-30.
+- Labels configured:
+  - package
+  - label
+  - barcode  
+  (bounding boxes)
+- Single task created and all 30 images uploaded.
+- Calibration annotation completed on exactly 10 images.
 
 # Calibration Metrics
-- Start time: 06:09 PM IST
-- End time: 06:33 PM IST
-- Images annotated: 10
-- Avg objects per image: 3–5
+- Start Time: 06:09 PM IST  
+- End Time: 06:33 PM IST  
+- Images Annotated: 10  
+- Avg Objects per Image: 3–5  
 
 # Observations / Edge Cases
-- Partial parcels at image boundaries.
+- Parcels partially outside image boundaries.
 - Labels and barcodes partially occluded by gray rectangles.
-- Multiple packages and multiple labels in single images.
+- Multiple packages and multiple labels present in some images.
 
 # Assumptions
-- Only visible regions annotated; no hidden parts inferred.
-- Gray occluder rectangles ignored as per client brief.
+- Only visible regions were annotated; no hidden parts inferred.
+- Gray occluder rectangles were ignored as per client brief.
+- Single-annotator workflow assumed for estimation.
 
-# Deliverables (06 Jan 2026)
+# Day 2 – Completion, QA & Delivery (07 Jan 2026)
 
-- Total Images: 30
-- Labels: package, label, barcode
-- Formats Delivered:
-  - COCO JSON
-  - CSV
-- Tool Used: CVAT
+- Completed annotation for remaining 20 images.
+- Conducted QA audit on 6 randomly sampled images (20%).
+- Identified minor defects related to loose bounding boxes and missing barcode regions.
+- All identified defects were corrected and revalidated.
+- Generated final exports and packaged delivery artifacts.
 
-### Dataset Exports
-- COCO JSON format for training and validation
-- YOLO format provided as additional annotation export
+# QA Summary
+- Total Images Audited: 6
+- Defect Types:
+  - Loose bounding boxes
+  - Missing barcode annotation
+- Severity: Minor
+- Final QA Status: PASS
 
-Labels:
-0 - package  
-1 - label  
-2 - barcode
+# Deliverables (Final – 07 Jan 2026)
+
+- Total Images Annotated: 30
+- Object Classes:
+  - package
+  - label
+  - barcode
+
+# Annotation Formats Delivered
+- COCO JSON (primary)
+- YOLO (additional)
+
+# Dataset Exports
+- COCO JSON export for training and validation
+- YOLO export provided as an additional format
