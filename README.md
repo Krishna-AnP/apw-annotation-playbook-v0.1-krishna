@@ -207,3 +207,11 @@ Status: Complete
   - CSV
 - Tool Used: CVAT
 
+### Dataset Exports
+- COCO JSON format for training and validation
+- YOLO format provided as additional annotation export
+
+Labels:
+0 - package  
+1 - label  
+2 - barcode
